@@ -12,6 +12,8 @@ def set_project():
         # set frame range
         nuke.root()['first_frame'].setValue(first_frame)
         nuke.root()['last_frame'].setValue(last_frame)
+
+        # Move the current frame to the frame range
         if nuke.frame() not in range(first_frame, last_frame+1):
             nuke.frame(first_frame)
 
