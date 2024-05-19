@@ -1,2 +1,2 @@
 # Set-Project
-A python script for Nuke.
+Currently testing
