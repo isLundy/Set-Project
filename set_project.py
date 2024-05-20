@@ -4,7 +4,7 @@
 def set_project():
 
     # check node numbers
-    if len(nuke.selectedNodes()) == 1:
+    if len(nuke.selectedNodes()) == 1 and nuke.selectedNode().Class() == 'Read':
         # get node info
         node = nuke.selectedNode()
         first_frame = 1001
@@ -50,21 +50,18 @@ def set_project():
             nuke.root()['format'].setValue(plate_name)
 
         # set fps
-        try:
-            nuke.root()['fps'].setValue(round(node.metadata()['input/frame_rate'], 3))
-        except:
-            metadata_fps = [value for key, value in node.metadata().items() if 'frame_rate' in key]
-            if metadata_fps:
-                nuke.root()['fps'].setValue(round(metadata_fps[0], 3))
-                print(metadata_fps)
-            else:
-                nuke.message('''Please set <span style="color: #FF9F0A">fps</span> manually in the <span style="color: rgb(255,159,10)">Project Settings</span>.'''
-                            '''\n\nreason:'''
-                            '''\nThe frame rate data doesn't exist.'''
-                            )
-                nuke.showSettings()
+        metadata_fps = [value for key, value in node.metadata().items() if 'frame_rate' in key]
+
+        if metadata_fps:
+            nuke.root()['fps'].setValue(round(metadata_fps[-1], 3))
+        else:
+            nuke.message('''Please set <span style="color: #FF9F0A">fps</span> manually in the <span style="color: rgb(255,159,10)">Project Settings</span>.'''
+                        '''\n\nreason:'''
+                        '''\nThe frame rate data doesn't exist.'''
+                        )
+            nuke.showSettings()
     # only one
     else:
-        nuke.message('Please select a ReadNode node (only <span style="color: rgb(255,69,58)">one</span>).')
+        nuke.message('Please select a <span style="color: rgb(255,69,58)">Read</span> node (only <span style="color: rgb(255,69,58)">one</span>).')
 
 set_project()
