@@ -55,7 +55,7 @@ def set_project():
         if metadata_fps:
             nuke.root()['fps'].setValue(round(metadata_fps[-1], 3))
         else:
-            nuke.message('''Please set <span style="color: #FF9F0A">fps</span> manually in the <span style="color: rgb(255,159,10)">Project Settings</span>.'''
+            nuke.message('''Please set <span style="color: rgb(255,159,10)">fps</span> manually in the <span style="color: rgb(255,159,10)">Project Settings</span>.'''
                         '''\n\nreason:'''
                         '''\nThe frame rate data doesn't exist.'''
                         )
