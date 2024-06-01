@@ -5,7 +5,7 @@
 <br />
 
 ## 功能
-通过 `Read` 节点自动设置工程的 `Frame range`、`fps`、`full size format`
+通过选择一个 `Read` 节点自动设置工程的 `Frame range`、`fps`、`full size format`
 
 <br />
 
