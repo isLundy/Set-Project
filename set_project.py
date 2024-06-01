@@ -8,10 +8,10 @@ def set_project():
         # get node info
         node = nuke.selectedNode()
         first_frame = 1001
-        last_frame = int(node['origlast'].getValue() - node['origfirst'].getValue() + first_frame)
-        plate_width = int(node['format'].value().width())
-        plate_height = int(node['format'].value().height())
-        plate_pixelAspect = int(node['format'].value().pixelAspect())
+        last_frame = int(node.frameRange().frames() + first_frame - 1)
+        plate_width = int(node.width())
+        plate_height = int(node.height())
+        plate_pixelAspect = int(node.pixelAspect())
 
         # set frame range
         nuke.root()['first_frame'].setValue(first_frame)
