@@ -5,7 +5,10 @@
 <br />
 
 ## Feature
-Set `Project Settings` based on the selected Read node.
+Set `Project Settings` based on the selected Read node, including:
+- `Frame range`
+- `fps`
+- `full size format`
 
 <br />
 
