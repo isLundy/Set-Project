@@ -4,16 +4,15 @@
 
 <br />
 
-## 功能
-通过选择一个 `Read` 节点自动设置工程的 `Frame range`、`fps`、`full size format`
+## Feature
+Set `Project Settings` based on the selected Read node.
 
 <br />
 
-## 使用方法：
-选择一个 `Read` 节点,然后运行该脚本
+## Use
+Select `a` `Read` node and then run the script.
 
 <br />
 
-## 安装
-介绍两种方法，强烈推荐第一种，配合 `W_hotbox` 使用
-方法一：
+## Installation
+Suggested to use with [W_hotbox](https://www.nukepedia.com/python/ui/w_hotbox) for efficient and quick workflow.
