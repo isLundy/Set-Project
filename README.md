@@ -4,7 +4,7 @@
 
 <br />
 
-## Feature
+## Features
 Set `Project Settings` based on the selected Read node, including:
 - `Frame range`
 
