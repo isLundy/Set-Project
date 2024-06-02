@@ -7,6 +7,8 @@
 ## Feature
 Set `Project Settings` based on the selected Read node, including:
 - `Frame range`
+
+    > The default setting for the first frame is 1001. If needed, you can change it in line `10` of the code.
 - `fps`
 - `full size format`
 
