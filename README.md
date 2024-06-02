@@ -15,7 +15,7 @@ Set `Project Settings` based on the selected Read node, including:
 
 <br />
 
-## Use
+## Usage
 Select `a` `Read` node and then run the script.
 
 <br />
