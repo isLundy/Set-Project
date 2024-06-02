@@ -15,4 +15,4 @@ Select `a` `Read` node and then run the script.
 <br />
 
 ## Installation
-Suggested to use with [W_hotbox](https://www.nukepedia.com/python/ui/w_hotbox) for efficient and quick workflow.
+Suggested to use with `W_hotbox` for efficient and quick workflow.
