@@ -64,5 +64,4 @@ def set_project():
     else:
         nuke.message('Please select a <span style="color: rgb(255,69,58)">Read</span> node (only <span style="color: rgb(255,69,58)">one</span>).')
 
-if __name__ == '__main__':
-    set_project()
+set_project()
