@@ -60,6 +60,7 @@ def set_project():
                         '''\nThe frame rate data doesn't exist.'''
                         )
             nuke.showSettings()
+
     # only one
     else:
         nuke.message('Please select a <span style="color: rgb(255,69,58)">Read</span> node (only <span style="color: rgb(255,69,58)">one</span>).')
