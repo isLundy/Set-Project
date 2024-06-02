@@ -21,7 +21,7 @@ Select `a` `Read` node and then run the script.
 <br />
 
 ## Installation
-Suggested to use with `W_hotbox` for efficient and quick workflow.
+Put the code into the `W_hotbox`.
 ![usage 01](./images/usage_01.png)
 
 ![usage 02](./images/usage_02.png)
