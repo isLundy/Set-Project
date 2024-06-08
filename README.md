@@ -6,7 +6,7 @@
 
 ## Features
 
-Set `Project Settings` based on the selected Read node, including:
+Automatically set the `Project Settings` based on the selected Read node, including:
 
 - `Frame range`
 
